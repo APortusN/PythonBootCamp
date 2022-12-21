@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor{
+    width: 800px;
+    height: 600px;
+    background-color: whitesmoke;
+}
+.barrasup{
+    width: 700px;
+    height: 60px;
+    background-color: black;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+.titulobarrasup{
+    font-weight: lighter;
+    font-size: 30px;
+    color: whitesmoke;
+    display: flex;
+    margin-left: 20px;
+}
+.titulofeed{
+    font-size: 30px;
+    font-weight: light;
+    text-align: center;
+    margin: 10px;
+}
+.contenedor1{
+    width: 200px;
+    height: 200px;
+    border: 2px gray solid;
+    position: absolute;
+    top: 120px; left: 50px;
+    display: block;    
+}
+.imgusuario{
+    margin-left: 60px;
+    margin-top: 20px;
+    
+}
+.subcont1{
+    width: 200px;
+    height: 100px;
+    display: block;    
+}
+.linkavatar{
+    font-size: 15px;
+    margin: 10px;
+    text-align: center;
+}
+.nombreusuario{
+    font-size: 30px;
+    margin: 15px;   
+    text-align: center;
+}
+.contenedor2{
+    width: 480px;
+    height: 120px;
+    border: 2px gray solid;
+    position: absolute;
+    top: 120px; left: 270px;
+    display:inline-block;
+}
+.contenedor3{
+    width: 480px;
+    height: 120px;
+    border: 2px gray solid;
+    position: absolute;
+    top: 260px; left: 270px;
+    display:inline-block;
+}
+.contenedor4{
+    width: 480px;
+    height: 120px;
+    border: 2px gray solid;
+    position: absolute;
+    top: 400px; left: 270px;
+    display:inline-block;
+}
+.cajasup{
+    width: 480px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+}
+.cajainf{
+    width: 480px;
+    height: 60px;
+}
+.nombreamigo1{
+    font-size: 25px;
+    font-weight: lighter;
+    margin-left: 15px;
+    margin-right: 220px;
+}
+.nombreamigo2{
+    font-size: 25px;
+    font-weight: lighter;
+    margin-left: 15px;
+    margin-right: 180px;
+}
+#likes1{
+    font-size: 15px;
+}
+#likes2{
+    font-size: 15px;
+}
+#likes3{
+    font-size: 15px;
+}
+.boton{
+    display: flex;
+}
+.btn{
+    width: 60px;
+    height: 30px;
+    color: black;
+    font-size: medium;
+    background-color: #FBBC05; 
+    box-shadow: 3px 3px 3px black; 
+    margin-left: 25px;
+}
+.descripcion{
+    font-size: 16px;
+    margin: 15px;
+}

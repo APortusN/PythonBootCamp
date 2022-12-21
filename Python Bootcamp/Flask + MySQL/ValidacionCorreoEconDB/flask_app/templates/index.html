@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Validación de correo electrónico</title>
+</head>
+<body>
+        <div class="container col-md-4 offset-md-4">
+        
+            <form action="/process" method='post'>
+                <div class="row text-center p-4">
+                    <h4 class="text-center">Valide su correo electrónico</h4>
+                </div>
+                <div >
+                    {% with messages = get_flashed_messages() %}     <!-- declare a variable called messages -->
+                    {% if messages %}                            <!-- check if there are any messages -->
+                        <h2 class="alert alert-warning text-center" role="alert">¡Alerta!</h2>
+                            {% for message in messages %}            <!-- loop through the messages -->
+                                <p class="text-center">{{message}}</p>                   <!-- display each message in a paragraph tag -->
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+                </div>
+                <div class="row mb-3">
+                    <label for="correo" class="form-label">Correo electrónico:</label>
+                    <input class="form-control" type="text" name="email" id="correo" placeholder="nombre">
+                </div>
+                <div class="row mb-3">
+                    <button type="submit" id ="button" class="btn btn-secondary">Aceptar</button>
+                </div>
+            </form>
+        </div>
+</html>

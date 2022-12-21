@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Encuesta Dojo</title>
+</head>
+<body>
+    <div class="container col-md-4 offset-md-4">
+        
+        <form action="/process" method='post'>
+            <div class="row text-center p-4">
+                <h1>Encuesta Dojo</h1>
+            </div>
+            <div class="row mb-3">
+                <label for="nombreInput" class="form-label">Nombre:</label>
+                <input class="form-control" type="text" name="nombre1" id="nombreInput" placeholder="nombre">
+            </div>
+            <div class="row mb-3">
+                <label for="ubicacionInput" class="form-label">Ubicación:</label>
+                
+                <select class="form-select form-select-md" name="ubicacion1">
+                    <option selected> -- selecciona ubicación --</option>
+                    <option value="Santiago">Santiago</option>
+                    <option value="Viña del Mar">Viña del Mar</option>
+                    <option value="Serena">Serena</option>
+                </select>
+            </div>
+            <div class="row mb-3">
+                <label for="lenguajeInput" class="form-label">Lenguaje favorito:</label>
+                <select class="form-select form-select-md" name="lenguaje1">
+                    <option selected> -- selecciona lenguaje--</option>
+                    <option value="Python">Python</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Java">Java</option>
+                </select>
+            </div>
+            <div class="row mb-3">
+                <label for="comentarioFormControlTextarea" class="form-label">Comentarios:</label>                
+                <textarea class="form-control" id="comentarioFormControlTextarea" rows="3" name="comentarios1"></textarea>            
+            </div>
+            <div class="row mb-3">
+                <button type="submit" id ="button" class="btn btn-secondary">Aceptar</button>
+            </div>
+        </form>
+</body>
+</html>
+

@@ -1,0 +1,235 @@
+*{
+    padding: o;
+    margin: 0;
+    font-family: 'roboto';
+}
+.contenedor{
+    width: 1200px;
+    height: 900px;
+    background-color: whitesmoke;
+    display: flex;
+}
+.barrasuperior{
+    width: 1200px;
+    height: 50px;
+    background-color: black;
+    margin: 0px;
+    display:flex;
+    align-items: center;
+    
+}
+.nav-title{
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+
+}
+.nav-links{
+    width: 300px;
+    height: 50px;    
+    font-weight: bold; 
+    list-style: none;    
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.boton{
+    display: flex;
+}
+.btn{
+    width: 125px;
+    height: 30px;
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: medium;
+    background-color: rgb(91,209,215); 
+    box-shadow: 3px 3px 3px black; 
+    margin-left: 290px;
+}
+
+.tarjetadeusuario{
+    display: flex;
+}
+.container1{
+    width: 500px;
+    height: 310px;
+    border: 2px gray solid;
+    position: absolute;
+    top: 100px; left: 150px;
+    }
+    .rectangulosup1{
+        width: 500px;
+        height: 100px;
+        background-color: rgb(91,209,215);
+    }
+    .usuario{
+        position: absolute;
+        top: 45px; left: 35px;
+    } 
+    .imgusuario{
+        border-radius: 50%;
+    }
+    .titulo{
+        color: black;
+        position: relative;
+        top: 50px; left: 40px;
+    }
+    .ubicacion{
+        color: black;
+        display: flex;
+        margin-right: 10px;
+        position: relative;
+        top: 60px; left: 40px;
+    }
+    .texto{
+        color: black;
+        position: relative;
+        top: 70px; left: 40px;
+    }    
+    .linkinf{
+        margin-right: 10px;         
+        position: relative;
+        top: 80px; left: 40px;
+    }
+
+.peticionesdeconexion{
+    width: 300px;
+    height: 250px;
+    border: 2px gray solid;    
+    position: absolute;
+    top: 100px; left: 700px; 
+}    
+.rectangulosup2{
+    width: 300px;
+    height: 50px;
+    background-color:#333333;
+    display: flex;
+}
+h2{
+    font-size: large;
+    align-self: center;
+    margin: 25px;
+    padding-left: 20px;
+    color: antiquewhite;
+}
+.rectanguloinf2{
+    width: 300px;
+    height: 200x;
+    align-items: flex-end; 
+}
+.solicitudamigo{
+    height: 50px;
+    display: inline-flex;
+    align-items: flex-start;
+}
+.izq{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+}
+.der{
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
+}
+.imagen{
+    margin-top: 10px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.tusconexiones{
+    width: 300px;
+    height: 430px;
+    border: 2px gray solid;
+    display: flex;
+    position: absolute;
+    top: 400px; left: 700px;
+}
+.rectangulosup3{
+    width: 300px;
+    height: 50px;
+    background-color: #333333;
+    display: flex;
+}
+h3{
+    font-size: large;
+    align-self: center;
+    margin: 25px;
+    padding-left: 20px;
+    color: antiquewhite;
+}
+.rectanguloinf3{
+    width: 300px;
+    height: 600x;
+}
+.amigos{
+    display: inline-block;
+}
+.circulogris{
+    background-color: antiquewhite;
+    color:#333333;
+    font-size: medium;
+    border-radius: 12px;
+    height: 30px;
+    padding: 0 10px;
+    margin-right: 10px;
+}
+.educacion{
+    width: 500px;
+    height: 385px;
+    border: 2px gray solid;    
+    position: absolute;
+    top: 450px; left: 150px;
+}
+.rectangulosup4{
+    width: 500px;
+    height: 50px;
+    background-color: #333333;
+    display: flex;
+}
+h4{
+    font-size: large;
+    align-self: center;
+    margin: 10px;
+    padding-left: 30px;
+    color: antiquewhite;
+}
+.rectanguloinf4{
+    width: 500px;
+    height: 150px;
+    color: black; 
+    display: block;
+}
+h5{
+    font-size: larger;
+    margin: 10px;
+    padding-left: 30px;
+}
+h6{
+    font-size: medium;
+    margin: 10px;
+    padding-left: 30px;
+    color: gray;
+}
+.h7{
+    font-size: medium;
+    margin: 10px;
+    padding-left: 30px;
+}
+.view{
+    width: 300px;
+    height: 30px;
+    border: 2px gray solid;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 832px; left: 700px;
+}
+.viewlink{
+    margin-left: 20px;
+}

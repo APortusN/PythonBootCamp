@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/stylehacerconexiones.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <!-- Barra Superior -->
+        <div class="barrasuperior">
+            <p class="nav-title">Profile</p>
+            <ul class="nav-links">
+                <li><a style="text-decoration:none;color:white;" href="#">Home</a></li>
+                <li><a style="text-decoration:none;color:white;" href="#" class="active">My Profile</a></li>
+                <li><a style="text-decoration:none;color:white;" href="#">Find connections</a></li>
+            </ul>
+            <div class="boton">
+                <button class="btn">Sign Out</button>
+            </div>
+        </div>
+        <!-- Caja Tarjeta usuario  -->
+        <div class="tarjetadeusuario">
+            <div class="container1">
+                <div class="rectangulosup1"></div>
+                <div class="usuario">
+                    <img class="imgusuario" src="images/jane-m.jpg" alt="Jane Doe" width="95" height="95">
+                </div>
+                <div class="titulo">
+                    <h1>Jane Doe</h1>        
+                </div>
+                <div class="ubicacion">
+                    <img src="icons/map-marker.png" alt="usuario" width="15" height="20">
+                    <p>Seattle</p>
+                </div>
+                <div class="texto">
+                    <p>Developer | Engineer | Problem Solver</p>
+                    <p>Master of shadows and the Internet!</p>
+                </div>
+                <div onclick="cambioUsuario()" class="linkinf">
+                    <img src="icons/gear.png" alt="usuario" width="15" height="15">
+                    <a style="text-decoration:underline;color:rgb(12,83,148);" href="#">edit profile</a>
+                </div>        
+            </div>
+        </div>
+        <!-- Caja Peticiones de Conexion -->
+        <div class="peticionesdeconexion">
+            <div class="container2">
+                <div class="rectangulosup2">
+                    <h2><span class="circulogris" id="peticiones">2</span>Connection Requests</h2>
+                </div>
+                <div class="rectanguloinf2">
+                    <div class="solicitudamigo" id="solicitud-1">
+                        <span class="izq">
+                            <img class="imagen" src="images/todd-s.jpg" alt="Image Todd" width="60" height="60">
+                            <span>Todd E.</span>
+                        </span>
+                        <span class="der">
+                            <img class="imagen" src="icons/accept-circle.png" alt="accept" width="20" height="20" onclick='aceptar("#solicitud-1")'>
+                            <img class="imagen" src="icons/close-circle.png" alt="decline" width="20" height="20"onclick='declinar("#solicitud-1")'>
+                            </span>
+                    </div>
+                    <div class="solicitudamigo" id="solicitud-2">
+                        <span class="izq">
+                            <img class="imagen" src="images/phil-s.jpg" alt="Image Phil" width="60" height="60">
+                            <span>Phil K.</span>
+                        </span>
+                        <span class="der">
+                            <img class="imagen" src="icons/accept-circle.png" alt="accept" width="20" height="20" onclick='aceptar("#solicitud-2")'>
+                            <img class="imagen" src="icons/close-circle.png" alt="decline" width="20" height="20" onclick='declinar("#solicitud-2")'>
+                        </span>
+                    </div>
+            </div>
+            </div>
+        </div> 
+        <!-- Caja Tus Conexiones -->
+        <div class="tusconexiones">
+            <div class="container3">
+                <div class="rectangulosup3">
+                    <h3><span class="circulogris" id="conexiones">498</span>Your Connections</h3>
+                </div>
+                <div class="rectanguloinf3">
+                    <div class="amigos">
+                        <span class="izq">
+                            <img class="imagen" src="images/adrien-s.jpg" alt="Image Adrien" width="60" height="60">
+                            <span>Adrien D.</span>
+                        </span>
+                        <span class="izq">
+                            <img class="imagen" src="images/anne-s.jpg" alt="Image Anne" width="60" height="60">
+                            <span>Anne J.</span>
+                        </span>
+                        <span class="izq">
+                            <img class="imagen" src="images/alayne-s.jpg" alt="Image Alayne" width="60" height="60">
+                            <span>Alayne T.</span>
+                        </span>
+                        <span class="izq">
+                            <img class="imagen" src="images/arry-s.jpg" alt="Image Arry" width="60" height="60">
+                            <span>Arry Y.</span>
+                        </span>
+                    </div>                
+                </div>                    
+            </div>           
+            </div>
+        </div>
+        <!-- Caja Educacion    -->
+        <div class="educacion">
+            <div class="container4">
+                <div class="rectangulosup4">
+                    <h4>Education</h4>
+                </div>
+                <div class="rectanguloinf4">
+                    <h5>Coding Dojo - Full Stack Bootcamp</h5>
+                    <h6>Dec 2019 - Mar 2020</h6>
+                    <div class="h7">Triple black belt in Python, MERN and C#...</div>
+                </div>
+            </div>
+        </div>
+        <!-- Cajita Link -->
+        <div class="view">
+            <a class="viewlink" href="#">View More</a>
+        </div>
+        <script src="./JShacerconexiones.js"></script>
+    </body>
+</html>   

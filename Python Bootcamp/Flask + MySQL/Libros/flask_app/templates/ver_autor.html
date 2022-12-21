@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Ver autores</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row mb-3 p-2">
+            <div class="col-5 p-4 border bg-light">
+                <div>
+                    <h2>{{autor.nombre}} favoritos: </h2>
+                </div>
+                <table class="table table-striped table-hover table-bordered border-secondary">
+                    <tr>
+                        <th>Título</th>
+                        <th>Número de páginas</th>
+                    </tr>
+                    {% for libro in autor.libros_favoritos %}
+                    <tr>
+                        <td>{{ libro.titulo }}</td>
+                        <td>{{ libro.num_de_pag }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                <div class="row mb-3 mt-3">
+                    <a href="/autores">Inicio</a>
+                </div>
+            </div>            
+            <div class="col-1">
+            </div>
+            <div class="col-4 p-4 border bg-light">
+                <h3>Añadir favorito del autor</h3>
+                <form action="/librofavorito" method="post">
+                    <input type="hidden" name="autor_id" value="{{autor.id}}">
+                        <div>
+                            <label for="libro_id" class="form-label">Libro:</label>                    
+                            <select id="libro_id" name="libro_id" class="form-select">
+                                {% for libro in libros_no_favoritos %}
+                                    <option value="{{libro.id}}">{{libro.titulo}}</option>
+                                {% endfor %}
+                            </select>
+                            <div class="d-grid gap-2 mt-3 mb-3 ">
+                                <input type="submit" value="Agregar libro" class="btn btn-secondary" >
+                            </div>
+                        </div>
+                    </form>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>New Ninja</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row mb-3 p-2">
+            <div class="col-5 bg-light">
+                <h2>Nuevo Ninja</h2>
+                <form action="/crear/ninja" method="post">
+                    <div>
+                        <label for="dojo" class="form-label">Dojo:</label>                    
+                        <select id="dojo" name="dojo_id" class="form-select">
+                            {% for dojoselect in dojos %}
+                                <option value="{{dojoselect.id}}">{{dojoselect.name}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div>
+                        <label for="fnombre" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="fnombre" name="fnombre">
+                    </div>
+                    <div>
+                        <label for="fapellido" class="form-label">Apellido:</label>
+                        <input type="text" class="form-control" id="fapellido" name="fapellido">
+                    </div>
+                    <div class="mb-3">
+                        <label for="fedad" class="form-label">Edad:</label>
+                        <input type="text" class="form-control" id="fedad" name="fedad">
+                    </div>
+                    <div class="d-grid gap-2 mb-3 ">
+                        <input type="submit" value="Crear" class="btn btn-secondary" >
+                    </div>
+                </form>
+                <div class="row mb-3">
+                    <a href="/dojos">Home</a>
+                </div>
+            </div>
+            <div class="col-6"></div>
+        </div>
+    </div>
+</body>
+</html>

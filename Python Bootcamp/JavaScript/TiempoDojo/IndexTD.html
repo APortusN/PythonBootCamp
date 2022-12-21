@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo Dojo</title>
+    <link rel="stylesheet" href="./styleTD.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="titulo">DojoWeather</div>
+            <div class="linkstitulo">
+            <a class="colorlinks" href="#" onclick="cargando()">Burbank</a>
+			<a class="colorlinks" href="#"onclick="cargando()">Chicago</a>
+			<a class="colorlinks" href="#"onclick="cargando()">Dallas</a>
+            </div>
+        </header>
+        <div class="barrasubtitulo">
+            <div class="subtitulo">San Jose</div>
+            <label id="selector">show temperature in</label>
+                <select id="select"  name="temperature-scale" onchange="convert(this)">
+                    <option >F</option>
+                    <option selected>°C</option>
+                </select>
+        </div>
+        <main>
+            <div class="today">
+                <p class="t1">Today</p>
+                <img class="imgs" src="./assets/some_rain.png" alt="rain" width="100" height="100">
+                <p class="d1">Some rain</p>
+                <p class="d2"><span style="color:red;"class="high" id="temp1">24°  </span><span style="color:blue;"class="low" id="temp2">  18°</span></p>
+            </div>
+            <div class="tomorrow">
+                <p class="t1">Tomorrow</p>
+                <img class="imgs" src="./assets/some_sun.png" alt="sun" width="100" height="100">
+                <p class="d1">Some sun</p>
+                <p class="d2"><span style="color:red;" class="high" id="temp3">27° </span><span style="color:blue;" class="low" id="temp4"> 19°</span></p>
+            </div>
+            <div class="friday">
+                <p class="t1">Friday</p>
+                <img class="imgs" src="./assets/some_clouds.png" alt="clouds" width="100" height="100">
+                <p class="d1">Some clouds</p>
+                <p class="d2"><span style="color:red;"class="high" id="temp5">21°  </span><span style="color:blue;"class="low" id="temp6">  16°</span></p>
+            </div>
+            <div class="saturday">
+                <p class="t1">Saturday</p>
+                <img class="imgs" src="./assets/some_sun.png" alt="sun" width="100" height="100">
+                <p class="d1">Some sun</p>
+                <p class="d2"><span style="color:red;" class="high" id="temp7">26°  </span><span style="color:blue;"class="low" id="temp8">  21°</span></p>
+            </div>
+        </main>
+        <div class="cookies" id="CK">
+            <img class="imgcookie" src="./assets/cookie.png" alt="cookie" width="80" height="80">
+            <div class="textocookie">
+                <p class="tcookies">Stop! Cookie time</p>
+                <p class="pcookies">We use cookies (sadly not the edible ones) to personalize
+                    content and ads, to provide social media features and to
+                    analyse our traffic. <a href="#">Read more...</a></p>
+            </div>
+            <button class="btn" onclick="EliminarCK()">I Accept</button>
+        </div>        
+    </div>
+    <script src="./scriptTD.js"></script>
+</body>
+</html>

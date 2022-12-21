@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento onclick</title>
+    <link rel="stylesheet" href="static/styleonclick.css">
+    <script src="static/jseventoonclick.js"></script>
+</head>
+<body>
+    <div class="contenedor"> 
+        <div class="barrasup">
+            <h1 class="titulobarrasup">Dojonary</h1>
+            <input class="barrabuscador" type="text" name="Search" value="Search">
+            <div class="boton">
+                <button class="btn" onclick="LogOut(this)">Login</button>
+            </div>
+        </div>
+        <div class="contenedor1">
+            <div class="cajaizq">
+                <p class="p1">ninja</p>
+                <p class="p2">noum</p>
+                <p class="p3">Pural:<span style="font-style: italic;">ninjas</span></p>                
+                <div class="boton1">
+                    <button class="btn1" onclick="aNinjaLeGusta()">13 likes</button>
+                </div>
+            </div>
+            <div class="cajader">
+                <p class="p4">A practicioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+            </div>
+        </div>    
+        <div class="contenedor2">
+            <div class="cajaizq">
+                <p class="p1">ninja</p>
+                <p class="p2">noum</p>
+                <p class="p3">Pural:<span style="font-style: italic;">ninjas</span></p>                
+                <div class="boton2">
+                    <button class="btn2" onclick="aNinjaLeGusta()">37 likes</button>
+                </div>
+            </div>
+            <div class="cajader">
+                <p class="p4">A <a href="#">programmer</a> who breacks down problems with <a href="#">zen</a>-like focus</p>
+            </div>
+        </div>
+        <div class="contenedor3">
+            <p class="p5">Dojonary is defined by <span class="p5a">YOU</span></p>
+            <div class="boton3">
+                <button class="btn3" onclick="EliminarBTN(this)">Add Definition</button>
+            </div>
+        </div>    
+    </div>    
+</body>
+</html>
